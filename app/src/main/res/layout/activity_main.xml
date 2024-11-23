@@ -1,0 +1,56 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@color/arkaplan"
+tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="94dp"
+    android:background="@color/ustbolum">
+    <ImageView
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/kupa"/>
+    <ImageView
+        android:id="@+id/main_setting"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="210dp"
+        android:src="@drawable/ayarlar"/>
+</LinearLayout>
+
+<com.airbnb.lottie.LottieAnimationView
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="50dp"
+    android:layout_width="300dp"
+    android:layout_height="220dp"
+    app:lottie_rawRes="@raw/search_anim"
+    android:id="@+id/animationView"
+    app:lottie_autoPlay="true"
+    app:lottie_loop="true"
+    app:lottie_url="REPLACE_JSON_URL"/>
+<ImageView
+    android:id="@+id/hemenoyna"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="hemenoyna"
+    android:src="@drawable/hemenoyna"
+    android:layout_marginTop="20dp"/>
+<ImageView
+    android:id="@+id/bolumler"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="bolumler"
+    android:src="@drawable/bolumler"/>
+
+
+
+</LinearLayout>
